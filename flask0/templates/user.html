@@ -1,0 +1,156 @@
+{% extends "bootstrap/base.html" %}
+
+
+{% block title %}COCO{% endblock %}
+
+
+
+{% block navbar %}
+<nav class="navbar navbar-default" role="navigation">
+	<div class="container-fluid">
+	<div class="navbar-header">
+		<a class="navbar-brand" href="#">首页</a>
+
+
+
+
+
+
+
+	</div>
+	<div>
+		<ul class="nav navbar-nav">
+			<li class="active"><a href="/">学生服务平台：</a></li>
+			
+			<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+					用户信息：{{name}}
+					<b class="caret"></b>
+				</a>
+				<ul class="dropdown-menu">
+					<li><a href="#">连接方式</a></li>
+					<li><a href="#">历史纪录</a></li>
+					<li><a href="#">个人空间</a></li>
+					<li class="divider"></li>
+					<li><a href="#">分离的链接</a> 
+				</ul>
+			</li>
+		</ul>
+	</div>
+
+
+
+
+     
+
+	</div>
+</nav>    
+{% endblock %}
+
+
+{% block content %}
+<div class="container">
+    <div class="page-header">
+    	        <h1 class="text-center" > <p class="bg-primary" > 大学生信息就业服务平台 </p></h1>
+
+    </div>
+
+
+
+    <div class="row" >
+<div class="col-md-3" >
+</div>
+<div class="col-md-6" >
+	<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="panel-title  text-center ">
+             登录
+        </h3>
+    </div>
+    <div class="panel-body">
+
+
+
+        <form class="form-horizontal"   action="/login" method="post" >
+  <div class="form-group">
+
+    <label for="inputEmail3" class="col-sm-2 control-label">用户名：</label>
+    <div class="col-sm-10">
+
+
+      <input type="email" class="form-control" id="inputEmail3" placeholder="用户名"  name="username" >
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputPassword3" class="col-sm-2 control-label">密码名：</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" id="inputPassword3" placeholder="密码：" name="password" >
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <div class="checkbox">
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-4 col-sm-10">
+      <button  class="btn btn-success">  <a href="/job/city=北京&num=1"> 登录   </a></button>
+
+    
+
+    
+      <button type="submit" class="btn btn-success   "> <a href=""> 重置 </a> </button>
+
+    </div>
+
+
+
+
+  </div>
+</form>
+
+
+
+
+
+    </div>
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="col-md-3">
+	
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+</div>
+{% endblock %}

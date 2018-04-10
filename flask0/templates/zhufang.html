@@ -1,0 +1,284 @@
+{% extends "bootstrap/base.html" %}
+
+
+{% block title %}COCO{% endblock %}
+
+
+{% block navbar %}
+
+<div class="navbar navbar-inverse" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle"
+            data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="/" class="navbar-brand">首页</a>
+            
+            
+            
+            <a class="navbar-brand" href="/xingwei">  企业新闻 </a>
+
+        
+
+
+        </div>
+        <div class="navbar-collapse collapse navbar-right">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="https://map.baidu.com/">地图</a>
+                   
+                </li>
+            </ul>
+
+
+            <ul class="nav navbar-nav">
+                <li>
+                    
+                    <a href="/"> 平台 </a>
+                    
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right ">
+            	<li>
+            		<input type="text" name="zhufang" class="from-control">
+            		<button type="submit" class="btn btn-default">提交</button>
+
+
+            	</li>
+            	
+
+
+            </ul>
+        </div>
+
+
+
+
+
+    </div>
+</div>
+
+
+{% endblock %}
+
+
+{% block content %}
+
+
+
+
+
+
+
+
+    <div class="row" >
+    	
+
+
+<div class="col-md-3" >
+	
+
+
+</div>
+
+
+
+<div class="col-md-6" >
+	
+
+
+	<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="panel-title  text-center ">
+             注册
+        </h3>
+    </div>
+    <div class="panel-body">
+
+
+
+        <form class="form-horizontal">
+  <div class="form-group">
+
+    <label for="inputEmail3" class="col-sm-2 control-label">用户名：</label>
+    <div class="col-sm-10">
+
+
+      <input type="email" class="form-control" id="inputEmail3" placeholder="用户名">
+    </div>
+
+
+  </div>
+  <div class="form-group">
+    <label for="inputPassword3" class="col-sm-2 control-label">密码名：</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" id="inputPassword3" placeholder="密码：">
+    </div>
+  </div>
+
+
+ <div class="form-group">
+    <label for="inputPassword3" class="col-sm-2 control-label">身份证号：</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="inputPassword3" placeholder="身份证号：">
+    </div>
+  </div>
+
+
+
+   <div class="form-group">
+    <label for="inputPassword3" class="col-sm-2 control-label">姓名：</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="inputPassword3" placeholder="姓名：">
+    </div>
+  </div>
+
+
+
+
+
+
+ <div class="form-group">
+    <label for="inputPassword3" class="col-sm-2 control-label">学历：</label>
+    <div class="col-sm-10">
+      
+<select class="form-control">
+  <option>中专/高中</option>
+  <option>专科/本科</option>
+  <option>硕士研究生</option>
+  <option>博士研究生</option>
+  <option>初中</option>
+</select>
+
+    </div>
+  </div>
+
+
+
+
+
+
+ <div class="form-group">
+    <label for="inputPassword3" class="col-sm-2 control-label">企业类型：</label>
+    <div class="col-sm-10">
+      
+<select class="form-control">
+  <option>全民所有制</option>
+  <option>中外合资</option>
+  <option>国有</option>
+  <option>独资</option>
+  <option>有限责任</option>
+</select>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <div class="checkbox">
+        
+        <label>
+          <input type="checkbox"> 应聘者
+        </label>
+
+ <label>
+          <input type="checkbox"> 招聘者
+        </label>
+
+
+
+         <label>
+          <input type="checkbox"> 管理员
+        </label>
+
+
+
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-4 col-sm-10">
+      <button type="submit" class="btn btn-success">  <a href="/user/<name>"> 登录</a> </button>
+
+    
+
+    
+      <button type="submit" class="btn btn-success   "> <a href="/user/<name>"> 重置</a></button>
+
+    </div>
+
+
+
+
+  </div>
+</form>
+
+
+
+
+
+    </div>
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="col-md-3">
+	
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+</div>
+
+
+
+  
+
+
+
+
+{% endblock %}
+
+{ % block body % }
+
+
+
+
+
+{ %   endblock  % }

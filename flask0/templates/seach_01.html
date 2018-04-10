@@ -1,0 +1,173 @@
+{% extends "bootstrap/base.html" %}
+
+{% block title %}Flasky{% endblock %}
+
+{% block navbar %}
+<div class="navbar navbar-inverse" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle"  
+            data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/user/请登录">用戶中心</a>
+            <a class="navbar-brand" href="/zhufang"> 用户注册 </a>
+            <a class="navbar-brand" href="/job/city=北京&num=1">找工作</a>
+           
+            <a class="navbar-brand" href="/xingwei"> 企业新闻</a>
+
+        
+
+
+        </div>
+        <div class="navbar-collapse collapse navbar-right">
+            <ul class="nav navbar-nav">
+                <li>
+                      <a href="/">地图</a>
+                   
+                </li>
+            </ul>
+
+            <ul class="nav navbar-nav">
+                <li>
+                    
+                    <a href="/"> 服務平台 </a>
+                    
+                </li>
+            </ul>
+
+            <ul class="nav navbar-nav">
+                <li>
+                    
+                    
+        <form class="navbar-form navbar-right" role="search">
+            <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
+           </div>
+            <button type="submit" class="btn btn-default">提交</button>
+        </form>
+                    
+                </li>
+            </ul>
+
+
+
+        </div>
+
+
+
+
+
+    </div>
+</div>
+{% endblock %}
+
+
+{% block content %}
+
+<div class="row" >
+
+<div class="col-md-3" >
+	
+ 
+</div>
+
+
+
+<div class="table table-bordered" > 
+<div class="col-md-6">
+	
+<form role="form"  action="/signin" method="post" >
+
+	<div class="col-md-3"> 
+
+
+  <div class="form-group">
+    <label for="name">城市</label>
+    <select class="form-control"  name="city" >   
+      <option>北京</option>
+      <option>上海</option>
+      <option>深圳</option>
+      <option>广州</option>
+      <option>杭州</option>
+      <option>成都</option>
+    </select>
+</div>
+
+
+	</div>
+	<div class="col-md-3" > 
+
+
+ <div class="form-group">
+    <label for="name">工作 </label>  
+    <select class="form-control" name="positionName" >
+      <option>Go</option>
+      <option>c</option>
+      <option>php</option>
+      <option>java</option>
+      <option>python</option>
+      <option>html5</option>
+      <option>ios</option>
+      <option>android</option>  
+      <option>UI</option>  
+      <option>web</option>
+
+    </select>
+</div>
+
+
+
+
+	</div>
+
+	<div class="col-md-3" > 
+
+
+
+
+ <div class="form-group">
+    <label for="name">学历要求</label>  
+    <select class="form-control"  name="education" >
+      <option> 大专</option>
+      <option>本科</option>
+      <option>硕士</option>
+      <option>博士</option>
+    </select>
+</div>
+</div>
+
+
+
+	<div class="col-md-3" > 
+		<div class="form-group">
+			<div>
+		<label for="name"> ———— </label>
+	</div>
+
+<button type="submit" class="btn btn-default"> 提交 </button>
+
+</div>
+
+ 
+</div>
+
+
+
+</form>
+</div>
+
+
+</div>
+
+<div class="col-md-3" >
+	
+
+</div>
+
+</div>
+
+{% endblock %}

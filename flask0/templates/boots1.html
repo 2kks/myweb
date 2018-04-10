@@ -1,0 +1,156 @@
+{% extends "bootstrap/base.html" %}
+
+{% block title %}Flasky{% endblock %}
+
+{% block navbar %}
+<div class="navbar navbar-inverse" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle"  
+            data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/user/请登录">用戶中心</a>
+            <a class="navbar-brand" href="/zhufang"> 用户注册 </a>
+            <a class="navbar-brand" href="/job/city=北京&num=1">找工作</a>
+           
+            <a class="navbar-brand" href="/xingwei"> 企业新闻</a>
+
+        
+
+
+        </div>
+        <div class="navbar-collapse collapse navbar-right">
+            <ul class="nav navbar-nav">
+                <li>
+                      <a href="/">地图</a>
+                   
+                </li>
+            </ul>
+
+            <ul class="nav navbar-nav">
+                <li>
+                    
+                    <a href="/"> 服務平台 </a>
+                    
+                </li>
+            </ul>
+
+            <ul class="nav navbar-nav">
+                <li>
+                    
+                    
+        <form class="navbar-form navbar-right" role="search">
+            <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
+           </div>
+            <button type="submit" class="btn btn-default">提交</button>
+        </form>
+                    
+                </li>
+            </ul>
+
+
+
+        </div>
+
+
+
+
+
+    </div>
+</div>
+{% endblock %}
+
+
+{% block content %}
+<div class="container">
+    <div class="page-header">
+        <h1 class="text-center" > <p class="bg-success" > 基于大数据的智慧就业服务信息平台 </p></h1>
+    </div>
+
+
+    <div class="row">
+
+  <div class="col-md-3"> 
+
+ <h2><p class="bg-primary" > 找工作</p> </h2>
+
+   <h2> <p class="bg-primary" > 企业新闻</p></h2>
+
+    <h2><p class="bg-primary" > 行业动态</p> </h2>
+
+    <h2> <p class="bg-primary" > 招人才</p></h2>
+
+    <h2> <p class="bg-primary" > 联系我们</p></h2>
+   
+    <p class="bg-primary" > QQ:123456789       </p>
+    <p class="bg-primary" > 联系电话:13011112222</p>
+
+</div>
+
+
+
+
+
+
+  <div class="col-md-9">
+    <p class="bg-success">找工作</p>
+
+<div>
+       <h5 class="text-center" > <p class="text-muted"> <u> 成都恒速科技有限公司 </u>  </p> </h5> 
+    <h5 class="text-center" > <p class="text-muted"> <u> 黑龙江建龙钢铁有限公司 </u>  </p> </h5> 
+    <h5 class="text-center" > <p class="text-muted"> <u> 云镶（上海）网络科技有限公司 </u>  </p> </h5> 
+    <h5 class="text-center" > <p class="text-muted"> <u> 青岛诺万电子科技有限公司</u>  </p> </h5> 
+
+</div>
+
+<div>
+    <p class="bg-success">找人才</p>
+      <h5 class="text-center" > <p class="text-muted"> <u> Android工程师/架构师 滴滴打车</u>  </p> </h5> 
+    <h5 class="text-center" > <p class="text-muted"> <u>iOS工程师/架构师 滴滴打车 </u>  </p> </h5> 
+    <h5 class="text-center" > <p class="text-muted"> <u> 苹果设备移动端高级开发工程师</u>  </p> </h5> 
+    <h5 class="text-center" > <p class="text-muted"> <u> PHP开发工程师</u>  </p> </h5> 
+    <h5 class="text-center" > <p class="text-muted"> <u> Java开发工程师 </u>  </p> </h5> 
+
+
+</div>
+
+
+
+<div class="row">
+   <div class="col-xs-12">  <p  class="text-center" >————本网页使用权归属于本团队所有———— </p> </div>
+  
+</div>
+
+
+<div class="row">
+   <div class="col-xs-12">  <p  class="text-center" >——2017.12.24——</p> </div>
+  
+</div>
+
+</div>
+
+
+
+<footer class="footer" >
+    
+    <div class="container">
+        <p class="text-muted">友情链接 <a href="https://www.lagou.com/zhaopin/" class="button button-caution button-jumbo">拉钩网Go</a> </p>
+      </div>
+
+</footer>
+
+
+
+{% endblock %}
+
+
+{  %  block body %  }
+
+
+
+{  %  endblock  %   }
